@@ -3,6 +3,10 @@ body {
     margin: auto;
 }
 
+.image {
+    width: 150px;
+}
+
 .nav-container {
     background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .1)), border-box;
     max-width: 1200px;
@@ -25,8 +29,9 @@ body {
 }
 
 .logo {
-    font-weight: bold;
-    font-size: 24px;
+    z-index: 9;
+    position: absolute;
+    margin-top: -20px;
 }
 
 .nav-container ul li {
@@ -51,6 +56,10 @@ body {
     margin-top: 35px;
     text-transform: uppercase;
     padding: 10px;
+}
+
+.mobileLogo {
+    display: none;
 }
 
 .burger-icon {
@@ -82,7 +91,8 @@ body {
 }
 
 .zone-one {
-    background-color: aqua;
+    background-image: url("C:/Users/diniz/Documents/LastBackUp/dinizprograma/This is it ver 1 ddd/Another TRy - This is IT the ral final one/project for Gid/joaosguesthouse/Images/SiteImages/Lagoas1.jpg");
+    background-size: cover;
     grid-area: ones;
     min-height: 250px;
     display: grid;
@@ -99,7 +109,7 @@ body {
 
 .zone-three {
     grid-area: threes;
-    /* background: url(imgs/Praia\ Fluvial\ do\ Vigário1.jpg) center;
+    /* background: url(imgs/Praia/ Fluvial/ do/ Vigário1.jpg) center;
     background-size: cover; */
     background-color: blue;
     min-height: 500px;
@@ -127,6 +137,9 @@ body {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "ones ones" "ones ones" "smalles smalles" "fours fours"
     }
+    .nav-container {
+        margin-top: 0px;
+    }
     .small-container {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "twos threes" "twos threes";
@@ -138,6 +151,29 @@ body {
     .list {
         grid-column: 1/5;
         text-align: center;
+    }
+    .mobileLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: sticky;
+        align-self: flex-start;
+        top: 0;
+    }
+    .mobileLogo img {
+        flex-shrink: 1;
+        min-width: 100%;
+        min-height: 100%
+    }
+    .logo {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .logo {
+        display: none;
     }
 }
 
