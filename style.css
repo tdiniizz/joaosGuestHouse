@@ -91,7 +91,7 @@ body {
 }
 
 .zone-one {
-    background-image: url("C:/Users/diniz/Documents/LastBackUp/dinizprograma/Joaos guesthouse final Git Version/Git Final Version/project for Gid/joaosguesthouse/Images/SiteImages/Lagoas1.jpg");
+    background-image: url("Images/SiteImages/Lagoas1.jpg");
     background-size: cover;
     grid-area: ones;
     min-height: 250px;
