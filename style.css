@@ -1,6 +1,7 @@
 body {
     font-family: 'Birthstone Bounce', cursive;
     margin: auto;
+    background-color: rgb(241 233 223);
 }
 
 .image {
@@ -99,8 +100,8 @@ body {
 }
 
 .zone-two {
-    /* background: url(imgs/aqueduto.jpg) center;
-    background-size: cover; */
+    background: url(Images/SiteImages/urbano.jpg) center;
+    background-size: cover;
     min-height: 500px;
     grid-area: twos;
     display: grid;
@@ -109,16 +110,16 @@ body {
 
 .zone-three {
     grid-area: threes;
-    /* background: url(imgs/Praia/ Fluvial/ do/ Vigário1.jpg) center;
-    background-size: cover; */
-    background-color: blue;
+    background: url(Images/SiteImages/Polje\ Miraminde.jpg) center;
+    background-size: cover;
     min-height: 500px;
     display: grid;
 }
 
 .zone-four {
     grid-area: fours;
-    background-color: rgb(180, 21, 21);
+    background: url(Images/SiteImages/Praia\ Fluvial\ do\ Vigário.jpg) center;
+    background-size: cover;
     min-height: 500px;
     display: grid;
 }
